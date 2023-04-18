@@ -13,11 +13,11 @@ function enterClicked () {
   let userTemp = parseInt(document.getElementById("user-temp").value);
   
   // Display if the Tempeture is Hot or Cold
-  if (userGuess == generator) {
-    result = "Congratulations you have correctly gussed my number."
+  if (userTemp >= 5) {
+    result = "The Tempeture you have Entred is Warm."
   }
-  if ( userGuess != generator){
-    result = "Sorry that is incorrect try again."
+  if ( userTemp < 5){
+    result = "The Tempeture you have Entred is Cold."
   }
   // Display Results back to User
   document.getElementById('result').innerHTML = result
