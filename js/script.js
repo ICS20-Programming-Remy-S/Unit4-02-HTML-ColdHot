@@ -6,16 +6,17 @@
 "use strict"
 
 function enterClicked () {
-  
+  // creat a variable for the temperature ir statment
   let result = "";
 
   // Number User Guessed
   let userTemp = parseInt(document.getElementById("user-temp").value);
   
-  // Display if the Tempeture is Hot or Cold
+  // Display if the Tempeture is Hot 
   if (userTemp >= 5) {
     result = "The Tempeture you have Entred is Warm."
   }
+  //Display if the temp is cold
   if ( userTemp < 5){
     result = "The Tempeture you have Entred is Cold."
   }
